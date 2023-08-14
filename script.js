@@ -1,8 +1,10 @@
 const body = document.querySelector('body');
 
+const dimesnions = document.querySelector('.containerDimension');
+const noOfBoxes = document.querySelector('.noOfBoxes');
 
-const containerDimension = 550;
-const noOfBox = 8;
+const containerDimension = Number(dimesnions.value);
+const noOfBox = Number(noOfBoxes.value);
 const smallContainerDimension = containerDimension/noOfBox;
 
 function createMainContainer() {
