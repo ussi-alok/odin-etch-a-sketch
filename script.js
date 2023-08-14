@@ -1,7 +1,9 @@
 const body = document.querySelector('body');
 
+
+const containerDimension = 550;
+
 function createMainContainer() {
-    const containerDimension = 550;
     const mainContainer = document.createElement('div');
     mainContainer.setAttribute('class','mainContainer');
     mainContainer.style.cssText=`height:${containerDimension}px;
@@ -10,6 +12,17 @@ function createMainContainer() {
     return mainContainer;
 };
 
+function createSmallContainer() {
+    const smallContainer = document.createElement('div');
+    smallContainer.setAttribute('class','smallContainer');
+    smallContainer.style.cssText=`height:${containerDimension/2}px;
+                                width:${containerDimension/2}px;
+                                background-color:black`;
+    return smallContainer;
+};
 
+const mainContainer = createMainContainer();
+const smallContainer = createSmallContainer();
 
-body.appendChild(createMainContainer());
+mainContainer.appendChild(smallContainer);
+body.appendChild(mainContainer);
