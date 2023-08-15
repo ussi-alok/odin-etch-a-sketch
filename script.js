@@ -21,10 +21,11 @@ function createMainContainer() {
 function createSmallContainer() {
     const smallContainer = document.createElement('div');
     smallContainer.setAttribute('class','smallContainer');
-    smallContainer.style.cssText=`height:${smallContainerDimension -1}px;
-                                width:${smallContainerDimension -1.3}px;
-                                background-color:black;
-                                margin:0.5px`;
+    smallContainer.style.cssText=`height:${smallContainerDimension }px;
+                                width:${smallContainerDimension }px;
+                                /*background-color:black;
+                                margin:0.5px*/`;
+    smallContainer.addEventListener('mouseover',()=>{smallContainer.style['background-color']='blue'});
     return smallContainer;
 };
 
