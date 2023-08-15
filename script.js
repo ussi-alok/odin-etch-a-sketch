@@ -2,6 +2,7 @@ const body = document.querySelector('body');
 
 const dimesnions = document.querySelector('.containerDimension');
 const noOfBoxes = document.querySelector('.noOfBoxes');
+const smallContainerBackground = document.querySelector('#colorPicker').value;
 
 const containerDimension = Number(dimesnions.value) || 550;
 const noOfBox = Number(noOfBoxes.value) || 4;
@@ -25,7 +26,7 @@ function createSmallContainer() {
                                 width:${smallContainerDimension }px;
                                 /*background-color:black;
                                 margin:0.5px*/`;
-    smallContainer.addEventListener('mouseover',()=>{smallContainer.style['background-color']='blue'});
+    smallContainer.addEventListener('mouseover',()=>{smallContainer.style['background-color']=`${smallContainerBackground}`});
     return smallContainer;
 };
 
