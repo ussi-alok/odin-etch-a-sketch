@@ -3,3 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 110vh;
+}
+.sketchInfo{
+    background-color: gray;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 12px;
+}
+label,input{
+    margin: 4px;
+}
+input.noOfBoxes,.containerDimension{
+    border: none;
+    background-color: rgb(205, 198, 198);
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#colorPicker{
+    border: none;
+    height: 30px;
+    
+}
